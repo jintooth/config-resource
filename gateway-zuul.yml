@@ -4,7 +4,7 @@ zuul:
   routes:
     api-a:
       path: /users/**
-      serviceId: usermgmt-service
+      serviceId: comsumer-demo
 #    api-b:
 #      path: /api-b/**
 #      serviceId: usermgmt-service
