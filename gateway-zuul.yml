@@ -1,0 +1,10 @@
+server:
+  port: 8002
+zuul:
+  routes:
+    api-a:
+      path: /users/**
+      serviceId: usermgmt-service
+#    api-b:
+#      path: /api-b/**
+#      serviceId: usermgmt-service
