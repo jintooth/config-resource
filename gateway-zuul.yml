@@ -2,9 +2,18 @@ server:
   port: 8002
 zuul:
   routes:
-    api-a:
+    comsumer-demo:
       path: /users/**
       serviceId: comsumer-demo
+    usermgmt-service:
+      path: /usermgmt-service/**
+      serviceId: usermgmt-service
 #    api-b:
 #      path: /api-b/**
 #      serviceId: usermgmt-service
+spring:
+  zipkin:
+    base-url: http://10.2.3.52:9411/
+  sleuth:
+    sampler:
+      probability: 1.0

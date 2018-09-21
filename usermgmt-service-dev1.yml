@@ -1,4 +1,19 @@
 server:
-  servlet:
-    context-path: /users
   port: 9004
+security:
+  oauth2:
+    client:
+      clientId: usermgmt-service
+      #clientSecret: ${USERMGMT_SERVICE_PASSWORD}
+      clientSecret: 321qaz
+      accessTokenUri: http://10.2.3.52:5000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+zipkin:
+  base-url: http://10.2.3.52:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0
+logging:
+  level:
+    root: INFO

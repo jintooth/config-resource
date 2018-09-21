@@ -1,0 +1,9 @@
+server:
+  port: 8004
+spring:
+  sleuth:
+    enable: false
+#zipkin:
+#  storage:
+#    type:
+#  zipkin.storage.type=mysql

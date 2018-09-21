@@ -1,4 +1,7 @@
 server:
-  servlet:
-    context-path: /users
   port: 9002
+zipkin:
+  base-url: http://10.2.3.52:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0

@@ -8,3 +8,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka:${EUREKA_SERVER_PORT}/eureka/
+
+security:
+  oauth2:
+    resource:
+      #user-info-uri: http://10.2.3.52:5000/uaa/users/current
+      tokenInfoUri: http://10.2.3.52:5000/uaa/oauth/check_token
